@@ -1,4 +1,8 @@
+.DS_Store
+
 **/node_modules
 /dist
 /lib
 /types
+
+/packages/cli/helloWorld
