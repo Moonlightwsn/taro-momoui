@@ -4,13 +4,11 @@ import indexHtml from "../template/indexHtml/index.js"
 import webpackConfig from "../template/webpackConfig/index.js"
 import packageify from "../template/package/index.js"
 
+import question from "../prompt/index.js"
+
 const getProjectPath = () => "./helloWorld"
 
-const config = {
-  packageName: "HelloWorld",
-  port: 8088,
-  devtool: "eval-cheap-module-source-map",
-}
+const config = await question()
 
 fs.mkdirSync(getProjectPath())
 fs.mkdirSync(`${getProjectPath()}/src`)

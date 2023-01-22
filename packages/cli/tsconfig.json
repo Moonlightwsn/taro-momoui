@@ -5,6 +5,7 @@
     "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "strict": true
+    "strict": true,
+    "target": "ESNext"
   }
 }
