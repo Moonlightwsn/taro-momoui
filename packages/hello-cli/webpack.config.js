@@ -6,9 +6,9 @@ module.exports = {
   output: {
     clean: true,
   },
-  devtool: "eval-cheap-module-source-map",
+  devtool: "eval-source-map",
   devServer: {
-    port: 8989
+    port: 6666
   },
   plugins: [
     new HtmlWebpackPlugin()

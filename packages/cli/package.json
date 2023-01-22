@@ -1,10 +1,13 @@
 {
   "name": "cli",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "cli tool for taro-momoui create new ui lib package",
   "type": "module",
+  "bin": {
+    "momo-cli": "bin/index.js"
+  },
   "scripts": {
+    "build": "tsc",
     "test": "rm -rf ../hello-cli && node --require=suppress-experimental-warnings --loader ts-node/esm ./bin/index.ts"
   },
   "keywords": [
