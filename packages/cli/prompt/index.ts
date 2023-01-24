@@ -11,5 +11,14 @@ type QuestionOutput = {
   installTool: string
 }
 
-export default (): Promise<QuestionOutput> =>
-  inquirer.prompt([packageName(), port(), devtool(), installTool()])
+export default (): Promise<QuestionOutput> => {
+  const cwd = process.cwd()
+  const cwdArr = (cwd || "").split("/")
+  const defaultPackageName = cwdArr.pop() || ""
+  return inquirer.prompt([
+    packageName(defaultPackageName),
+    port(),
+    devtool(),
+    installTool(),
+  ])
+}

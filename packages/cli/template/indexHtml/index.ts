@@ -2,10 +2,12 @@ import ejs from "ejs"
 import fs from "fs"
 import prettier from "prettier"
 
-import { getRootPath } from "../../bin/utils/index.js"
+import { getCliRootPath } from "../../bin/utils/index.js"
 
 export default ({ packageName }: { packageName: string }) => {
-  const file = fs.readFileSync(getRootPath("template/indexHtml/indexHtml.ejs"))
+  const file = fs.readFileSync(
+    getCliRootPath("template/indexHtml/indexHtml.ejs")
+  )
   const code = ejs.render(file.toString(), { packageName })
   return prettier.format(code, { parser: "html" })
 }

@@ -8,7 +8,7 @@ module.exports = {
   },
   devtool: "eval-cheap-module-source-map",
   devServer: {
-    port: 8888,
+    port: 3333,
   },
   plugins: [new HtmlWebpackPlugin()],
 };

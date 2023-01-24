@@ -1,1 +1,1 @@
-export declare const getRootPath: (pathUrl: string) => string;
+export declare const getCliRootPath: (pathUrl: string) => string;
