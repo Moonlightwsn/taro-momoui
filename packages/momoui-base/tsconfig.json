@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "target": "es2017",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "typeRoots": ["node_modules/@types", "types"],
+    "types": ["node"],
+    "paths": {
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
+    }
+  },
+  "compileOnSave": false,
+  "exclude": ["node_modules/*", "dist/*"]
+}
