@@ -1,5 +1,5 @@
 {
-  "name": "cli",
+  "name": "momo-cli",
   "version": "1.0.0",
   "description": "cli tool for taro-momoui create new ui lib package",
   "type": "module",
