@@ -5,4 +5,7 @@
 /lib
 /types
 
+/packages/momo-cli/**/*.js
+/packages/momo-cli/**/*.d.ts
+
 tsconfig.tsbuildinfo

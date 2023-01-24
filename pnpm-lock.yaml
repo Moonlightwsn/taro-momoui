@@ -45,6 +45,36 @@ importers:
       webpack-cli: 4.10.0_uaydpeuxkjjcxdbyfgk36cjdxi
       webpack-dev-server: 4.11.1_pda42hcaj7d62cr262fr632kue
 
+  packages/momo-cli:
+    specifiers:
+      '@types/ejs': ^3.1.1
+      '@types/inquirer': ^9.0.3
+      '@types/node': ^18.11.18
+      '@types/prettier': ^2.7.2
+      chalk: ^5.2.0
+      ejs: ^3.1.8
+      execa: ^6.1.0
+      inquirer: ^9.1.4
+      prettier: ^2.8.3
+      suppress-experimental-warnings: ^1.1.3
+      ts-node: ^10.9.1
+      tslib: ^2.4.1
+      typescript: ^4.9.4
+    devDependencies:
+      '@types/ejs': 3.1.1
+      '@types/inquirer': 9.0.3
+      '@types/node': 18.11.18
+      '@types/prettier': 2.7.2
+      chalk: 5.2.0
+      ejs: 3.1.8
+      execa: 6.1.0
+      inquirer: 9.1.4
+      prettier: 2.8.3
+      suppress-experimental-warnings: 1.1.3
+      ts-node: 10.9.1_awa2wsr5thmg3i7jqycphctjfq
+      tslib: 2.4.1
+      typescript: 4.9.4
+
 packages:
 
   /@cspotcode/source-map-support/0.8.1:
