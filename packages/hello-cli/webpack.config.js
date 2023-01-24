@@ -1,4 +1,4 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -6,11 +6,9 @@ module.exports = {
   output: {
     clean: true,
   },
-  devtool: "eval-source-map",
+  devtool: "eval-cheap-source-map",
   devServer: {
-    port: 6666
+    port: 6666,
   },
-  plugins: [
-    new HtmlWebpackPlugin()
-  ]
-}
+  plugins: [new HtmlWebpackPlugin()],
+};
